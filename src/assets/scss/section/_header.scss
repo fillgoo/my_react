@@ -1,11 +1,11 @@
 #header{
+    @include position_fixed;
     z-index: 10000;
-    @include position_fixed
 }
 .header_inner{
     @include flex_between;
     background-color: rgba(116,99,99,0.1);
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(5px);
     padding: 1rem;
 
     .header_logo{
@@ -34,12 +34,14 @@
                     right: 0;
                     top: 68px;
                     background-color: rgba(116,99,99,0.1);
-                    backdrop-filter: blur(15px);
+                    backdrop-filter: blur(5px);
                     z-index: 1000;
-                    // padding: 20px 0;
+
+
                     li{
                         display: block;
                         text-align: right;
+
                         a{
                             display: inline-block;
                             padding: 10px;
@@ -55,9 +57,11 @@
             }
         }
 
+
         ul{
+
             li{
-                display: inline;    
+                display: inline;
                 a{
                     text-transform: uppercase;
                     font-size: 14px;
@@ -83,11 +87,11 @@
         }
     }
     .header_nav_mobile{
-        display: none;
         width: 40px;
         height: 40px;
         cursor: pointer;
         // background-color: #ccc;
+        display: none;
 
         @media(max-width:800px){
             display: block;
@@ -107,7 +111,8 @@
                 height: 2px;
                 background-color: var(--black);
                 position: absolute;
-                right: 0; top: 6px;
+                right: 0;
+                top: 6px;
                 transition: width 0.3s;
             }
             &::after{
@@ -116,7 +121,8 @@
                 height: 2px;
                 background-color: var(--black);
                 position: absolute;
-                left: 0; bottom: 6px;
+                left: 0;
+                bottom: 6px;
                 transition: width 0.3s;
             }
         }

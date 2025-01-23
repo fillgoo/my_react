@@ -20,7 +20,7 @@
     transform: translate(-50%,-50%);
 }
 
-//상단고정
+//상단 고정
 @mixin position_fixed{
     position: fixed;
     left: 0;
