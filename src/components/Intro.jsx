@@ -1,7 +1,7 @@
 import React from 'react'
 
 import about from "../assets/img/about.png";
-import about2 from "../assets/img/about2.png";
+
 
 const introText = {
     title:"port developer",
