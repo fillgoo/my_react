@@ -1,12 +1,13 @@
 @charset "utf-8";
 
 // setting
-@import "./setting/fonts";
-@import "./setting/mixin";
-@import "./setting/reset";
-@import "./setting/vars";
+@import "./settiong/fonts";
+@import "./settiong/mixin";
+@import "./settiong/reset";
+@import "./settiong/vars";
 
-//section
+// section
+
 @import "./section/contact";
 @import "./section/footer";
 @import "./section/header";

@@ -1,21 +1,17 @@
 import React from 'react'
+import about from '../assets/imges/imgs.png';
+import about2 from '../assets/imges/imgs2.png';
+import {introText} from "../contants";
 
-import about from "../assets/img/about.png";
-import about2 from "../assets/img/about2.png";
-
-const introText = {
-    title:"port developer",
-    desc:["talent is","found at the end of the","effort"]
-} 
 
 const Intro = () => {
   return (
-      <section id='intro'>
+    <section id='intro'>
         <div className="intro_inner">
             <h1 className='intro_title'>
                 {introText.title}
             </h1>
-            <div className="intro_lines" aria-hidden="true">
+            <div className="intro_lines" aria-hidden='true'>
                 <span className='line'></span>
                 <span className='line'></span>
                 <span className='line'></span>
@@ -31,11 +27,12 @@ const Intro = () => {
                     <div>{introText.desc[2]}</div>
                 </div>
                 <div className="img">
-                    <img src={about} alt="이미지 넣기" />
+                    <img src={about} alt="내사진" />
+                    {/* <img src={about2} alt="개" /> */}
                 </div>
             </div>
-            <div className="intro_lines bottom" aria-hidden="true">
-            <span className='line'></span>
+            <div className="intro_lines bottom" aria-hidden='true'>
+                <span className='line'></span>
                 <span className='line'></span>
                 <span className='line'></span>
                 <span className='line'></span>
@@ -44,7 +41,7 @@ const Intro = () => {
                 <span className='line'></span>
             </div>
         </div>
-      </section>
+    </section>
   )
 }
 

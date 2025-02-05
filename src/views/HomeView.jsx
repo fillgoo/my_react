@@ -10,20 +10,20 @@ import Footer from '../components/Footer'
 import Main from '../components/Main'
 
 const HomeView = () => {
-    return (
-        <>
-            <Skip />
-            <Header />
-            <Main>
-                <Intro />
-                <Skill />
-                <Site />
-                <Port />
-                <Contact />
-            </Main>
-            <Footer />
-        </>
-    )
+  return (
+    <>
+        <Skip />
+        <Header />
+        <Main >
+          <Intro />
+          <Skill />
+          <Site />
+          <Port />
+          <Contact />
+        </Main>
+        <Footer />
+    </>
+  )
 }
 
 export default HomeView

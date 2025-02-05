@@ -1,10 +1,11 @@
 #site{}
 .site_inner{
     padding: 16px;
+
     .site_title{
         position: sticky;
         left: 0;
-        top: 70px;
+        top: 5%;
         width: 70%;
         height: auto;
         font-size: 4vw;
@@ -16,84 +17,94 @@
         border-bottom: 0.4vw solid var(--black100);
         margin-bottom: 100px;
         background-color: var(--mainBg-color);
-
         em{
-            font-size: 1.25em;
+            font-size: 1.25rem;
             font-weight: 400;
             line-height: 2;
         }
     }
-    .site_item{
-        height: 70vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        position: sticky;
-        left: 0;
 
-        &.s1{background-color: var(--subBg100); top: 180px;}
-        &.s2{background-color: var(--subBg200); top: 200px;}
-        &.s3{background-color: var(--subBg300); top: 220px;}
-        &.s4{background-color: var(--subBg400); top: 240px;}
-
-        .num{
-            position: absolute;
-            top: 1vw;
-            left: 1vw;
-            font-size: 5vw;
-            font-weight: 900;
-            font-family: var(--mainNum-font);
-        }
-        .text{
-            text-align: center;
-            margin-bottom: 1.2rem;
-
-            &>div{
-                font-size: 3vw;
-                line-height: 1;
-                font-weight: 500;
-                text-transform: uppercase;
-                // text-decoration: underline;
+        .site_item{
+            height: 70vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: sticky;
+            left: 0;
+            
+            .num{
+                position: absolute;
+                top: 1vw;
+                left: 1vw;
+                font-size: 5vw;
+                font-weight: 900;
                 font-family: var(--mainNum-font);
-
             }
-        }
-        .title{
-            font-family: var(--mainKor-font);
-            margin-bottom: 1.2rem;
-        }
-        .btn{
-            a{
-                text-decoration: underline;
-                text-transform: capitalize;
-                display: inline-block;
-                margin-right: 1vw;
-                font-size: 16px;
-                transition: all 0.3s;
-
-                &:hover{
-                    color: var(--orange);
+            .text{
+                text-align: center;
+                margin-bottom: 1.2rem;
+                & > div{
+                    font-size: 3vw;
+                    line-height: 1.2;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    font-family: var(--mainNum-font);
                 }
             }
-        }
-        .info{
-            position: absolute;
-            left: 0;
-            bottom: 1%;
-            width: 98%;
-            margin-left: 1%;
-            margin-right: 1%;
-            border-top: 1px solid var(--black);
-            border-bottom: 1px solid var(--black);
-            @include flex_between_ju;
-
-            span{
-                font-size: 12px;
-                padding: 3px 0;
-                text-transform: uppercase;
+            .title{
+                font-family: var(--mainKor-font);
+                margin-bottom: 1.2rem;
             }
+            .btn{
+                text-align: center;
+                a{
+                    text-decoration: underline;
+                    text-transform: capitalize;
+                    display: inline-block;
+                    margin-right: 1vw;
+                    font-size: 16px;
+                    transition: all 0.3s;
+
+                    &:hover{
+                        color: var(--orange);
+                    }
+                }
+            }
+            .info{
+                position: absolute;
+                width: 98%;
+                margin-left: 1%;
+                left: 0;
+                bottom: 1vw;
+                border-top: 1px solid var(--black100);
+                border-bottom: 1px solid var(--black100);
+                @include flex_between_js;
+
+                span{
+                    font-size: 12px;
+                    padding: 3px 0;
+                    text-transform: uppercase;
+                }
+            }
+            &.s1{
+                top: 180px;
+                background-color: var(--subBg100);
+            }
+            &.s2{
+                top: 200px;
+                background-color: var(--subBg200);
+            }
+            &.s3{
+                top: 220px;
+                background-color: var(--subBg300);
+            }
+            &.s4{
+                top: 240px;
+                background-color: var(--subBg400);
+            }
+    
         }
 
-    }
 }

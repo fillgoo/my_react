@@ -1,15 +1,14 @@
-#skip{
-        a{
-            position: absolute;
-            left: 10px;
-            top: -90px;
-            z-index: 10000;
-            font-size: 16px;
-            padding: 10px 30px;
-            color: var(--white);
-            background-color: var(--black);
-        }
-    }
+#skip a{
+    position: absolute;
+    left: 10px;
+    top: -90px;
+    z-index: 10000;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: var(--white);
+    background-color: var(--black);
+}
 #skip a:focus,
 #skip a:active{
     top: 10px;
